@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claim Free Optimization Audit | Wanniassa Automation Suite</title>
+    <link rel="icon" type="image/png" href="website_logo.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #090d16; color: #ffffff; line-height: 1.6; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 8%; background-color: #0f172a; border-bottom: 1px solid #1e293b; }
+        .logo-container { display: flex; align-items: center; gap: 10px; text-decoration: none; font-size: 1.4rem; font-weight: bold; color: #ffffff; }
+        .logo-img { width: 32px; height: 32px; object-fit: contain; border-radius: 4px; }
+        .logo-container span { color: #10b981; }
+        .container { padding: 80px 10%; text-align: center; }
+        h1 { font-size: 2.8rem; color: #10b981; margin-bottom: 15px; font-weight: 800; }
+        p { color: #94a3b8; font-size: 1.2rem; }
+        .booking-card { background-color: #111827; border: 1px solid #1e293b; max-width: 500px; margin: 40px auto; padding: 40px; border-radius: 16px; text-align: left; box-shadow: 0 15px 35px rgba(0,0,0,0.4); }
+        label { font-size: 0.9rem; font-weight: bold; color: #94a3b8; display: block; margin-top: 15px; }
+        input { width: 100%; padding: 12px; border-radius: 6px; border: 1px solid #1e293b; background-color: #090d16; color: #ffffff; font-size: 1rem; margin-top: 5px; text-align: center; }
+        .btn { display: block; width: 100%; text-align: center; background-color: #10b981; color: #ffffff; padding: 14px; border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 30px; border: none; cursor: pointer; font-size: 1rem; }
+        .btn:hover { background-color: #059669; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo-container">
+            <img src="website_logo.png" alt="Wanniassa Core Logo" class="logo-img">
+            Wanniassa <span>Software Core</span>
+        </a>
+    </header>
+
+    <div class="container">
+        <h1>Claim Free Optimization Audit</h1>
+        <p>Discover exactly how many administration hours your company workflow can save using localized application automation templates.</p>
+
+        <div class="booking-card">
+            <h3 style="color: #ffffff; text-align: center; font-size: 1.2rem; margin-bottom: 10px;">Evaluation Portal Terminal</h3>
+            
+            <label>Business / Corporate Operating Name:</label>
+            <input type="text" id="free-name" placeholder="e.g. Tuggeranong Solar Systems">
+            
+            <label>Best Contact Email Address:</label>
+            <input type="email" id="free-email" placeholder="e.g. info@business.com.au">
+            
+            <button class="btn" onclick="submitFreeAudit()">Claim Free Operational Audit ➔</button>
+        </div>
+    </div>
+
+    <script>
+        function submitFreeAudit() {
+            var email = document.getElementById('free-email').value.trim;
+            if(!email) {
+                alert('Validation Alert:\nPlease provide an activation email parameter.');
+                return;
+            }
+            alert('AUDIT METRICS RECORDED!\n\nWe have synchronized your request tracking pipeline. Our development engineering line will map out your custom workflow report over the next 24 hours.');
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+</html>

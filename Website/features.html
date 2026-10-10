@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Features | Wanniassa Automation Suite</title>
+    <link rel="icon" type="image/png" href="website_logo.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #090d16; color: #ffffff; line-height: 1.6; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 8%; background-color: #0f172a; border-bottom: 1px solid #1e293b; position: sticky; top: 0; z-index: 1000; }
+        .logo-container { display: flex; align-items: center; gap: 10px; text-decoration: none; font-size: 1.4rem; font-weight: bold; color: #ffffff; }
+        .logo-img { width: 32px; height: 32px; object-fit: contain; border-radius: 4px; }
+        .logo-container span { color: #10b981; }
+        nav a { color: #94a3b8; text-decoration: none; margin: 0 15px; font-size: 0.95rem; }
+        nav a:hover { color: #ffffff; }
+        .cta-btn { background-color: #2563eb; color: #ffffff; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+        .container { padding: 80px 10%; }
+        h1 { font-size: 2.8rem; text-align: center; margin-bottom: 15px; font-weight: 800; }
+        .sub-p { text-align: center; color: #94a3b8; font-size: 1.2rem; max-width: 700px; margin: 0 auto 60px; }
+        .feature-row { display: flex; gap: 50px; align-items: center; margin-bottom: 80px; background-color: #0f172a; border: 1px solid #1e293b; padding: 40px; border-radius: 16px; scroll-margin-top: 100px; }
+        .feature-text { flex: 1; }
+        .feature-text h2 { font-size: 1.8rem; margin-bottom: 15px; font-weight: 700; }
+        .feature-text p { color: #94a3b8; margin-bottom: 20px; }
+        .feature-bullets { list-style: none; }
+        .feature-bullets li { margin-bottom: 10px; color: #cbd5e1; display: flex; align-items: center; gap: 8px; font-size: 0.95rem; }
+        .feature-bullets li span { color: #10b981; font-weight: bold; }
+        .app-mockup { flex: 1; background-color: #0b0f19; border: 2px solid #1e293b; border-radius: 10px; padding: 25px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); font-family: 'Courier New', monospace; }
+        .mockup-header { display: flex; justify-content: space-between; border-bottom: 1px solid #1e293b; padding-bottom: 10px; margin-bottom: 15px; font-size: 0.8rem; color: #64748b; }
+        .mockup-line { margin-bottom: 8px; font-size: 0.85rem; }
+        footer { background-color: #0f172a; padding: 40px 10%; text-align: center; border-top: 1px solid #1e293b; color: #64748b; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo-container">
+            <img src="website_logo.png" alt="Wanniassa Core Logo" class="logo-img">
+            Wanniassa <span>Software Core</span>
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="features.html" style="color: #ffffff; font-weight: bold;">Features</a>
+            <a href="analytics.html">Analytics</a>
+            <a href="pricing.html">Pricing</a>
+        </nav>
+        <a href="audit.html" class="cta-btn">Book Free Audit</a>
+    </header>
+
+    <div class="container">
+        <h1>Suite Architecture & Capabilities</h1>
+        <p class="sub-p">A granular structural review of the automation frameworks compiled inside our independent desktop binaries.</p>
+
+        <!-- APP 1: CRM -->
+        <div class="feature-row" id="crm">
+            <div class="feature-text">
+                <h2 style="color: #38bdf8;">1. The Sales Lead Tracker</h2>
+                <p>Engineered to completely automate client registration data mapping, contract values tracking, and sales pipeline optimization workflows.</p>
+                <ul class="feature-bullets">
+                    <li><span>✔</span> Relational Lead Logging: Links metadata straight into a secure database layer.</li>
+                    <li><span>✔</span> Real-Time Network Pings: Integrates requests modules to fetch live international exchange metrics.</li>
+                    <li><span>✔</span> Multi-Threaded Processing: Prevents terminal lock freeze states during active network handshakes.</li>
+                </ul>
+            </div>
+            <div class="app-mockup">
+                <div class="mockup-header"><div>System Authorization Terminal</div><div>● Active</div></div>
+                <div class="mockup-line" style="color: #10b981;">[SUCCESS] Encrypted License Key Verified.</div>
+                <div class="mockup-line" style="color: #38bdf8;">⏳ TRIAL EXPIRES IN: 29d 23h 59m 42s</div>
+                <div class="mockup-line" style="color: #ffffff; margin-top: 15px;">Target Client: Canberra Logistics Pty Ltd</div>
+                <div class="mockup-line" style="color: #ffffff;">Target Revenue Projection: $155,000.00</div>
+                <div class="mockup-line" style="color: #10b981; margin-top: 15px;">[PIPELINE] Compiling Proposal Report PDF...</div>
+            </div>
+        </div>
+
+        <!-- APP 2: TIMESHEET -->
+        <div class="feature-row" id="payroll" style="flex-direction: row-reverse;">
+            <div class="feature-text">
+                <h2 style="color: #fb923c;">2. The Attendance & Payroll Matrix</h2>
+                <p>Forces complex Australian industrial labor criteria algorithms to run automatically, displacing administrative payroll math errors.</p>
+                <ul class="feature-bullets">
+                    <li><span>✔</span> Automated Penalty Calculations: Detects hours exceeding 38-hour standard thresholds instantly.</li>
+                    <li><span>✔</span> 1.5× & 2.0× Award Logic: Automatically applies overtime modifiers to calculation parameters.</li>
+                    <li><span>✔</span> Local Structural History: Keeps offline audit ledgers permanently on localized hardware grids.</li>
+                </ul>
+            </div>
+            <div class="app-mockup">
+                <div class="mockup-header"><div>Labor Verification Terminal</div><div>● Guarded</div></div>
+                <div class="mockup-line" style="color: #ffffff;">Contractor Name: Marcus Smith</div>
+                <div class="mockup-line" style="color: #ffffff;">Total Hours Worked: 45.00 hrs</div>
+                <div class="mockup-line" style="color: #fb923c; margin-top: 10px;">[AWARD MATCH] 38.00 Base Hours | 7.00 Overtime Hours</div>
+                <div class="mockup-line" style="color: #10b981; font-weight: bold; margin-top: 10px;">Gross Remuneration Account: AUD $2,182.50</div>
+                <div class="mockup-line" style="color: #ffffff; margin-top: 10px;">[DATABASE] Permanent record written to index ID #42.</div>
+            </div>
+        </div>
+
+        <!-- APP 3: INVENTORY -->
+        <div class="feature-row" id="inventory">
+            <div class="feature-text">
+                <h2 style="color: #ec4899;">3. The Stock & Warehouse Optimizer</h2>
+                <p>A smart, multi-layered logistics framework tracking physical stock volumes, processing reorders, and tracking overhead holding constraints.</p>
+                <ul class="feature-bullets">
+                    <li><span>✔</span> Automated Threshold Monitors: Analyzes quantity volumes continuously behind the scenes.</li>
+                    <li><span>✔</span> Visual Alert Warnings: Injects crimson hazard banners directly onto canvas sheets if stock breaks safe limits.</li>
+                    <li><span>✔</span> Annual Asset Drag Analysis: Dynamically assesses storage cost depreciation variables.</li>
+                </ul>
+            </div>
+            <div class="app-mockup">
+                <div class="mockup-header"><div>Logistics Management Portal</div><div>● Connected</div></div>
+                <div class="mockup-line" style="color: #ffffff;">Product Stock Label: Heavy Steel Girders</div>
+                <div class="mockup-line" style="color: #ffffff;">Available Quantity: 6 units</div>
+                <div class="mockup-line" style="color: #ef4444; font-weight: bold; margin-top: 15px;">⚠️ STOCK CRITICAL: REORDER THRESHOLD BREACHED (UNDER 10 UNITS)</div>
+                <div class="mockup-line" style="color: #ffffff; margin-top: 15px;">Total Capital Hold Valuation: $511.20</div>
+                <div class="mockup-line" style="color: #10b981;">[PDF REPORT] Vector stock chart drawn successfully.</div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Wanniassa Systems Automation Engine Core. ACT Software Distribution Lines.</p>
+    </footer>
+
+</body>
+</html>

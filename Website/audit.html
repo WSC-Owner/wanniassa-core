@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Corporate Audit | Wanniassa Automation Suite</title>
+    <link rel="icon" type="image/png" href="website_logo.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #090d16; color: #ffffff; line-height: 1.6; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 8%; background-color: #0f172a; border-bottom: 1px solid #1e293b; }
+        .logo-container { display: flex; align-items: center; gap: 10px; text-decoration: none; font-size: 1.4rem; font-weight: bold; color: #ffffff; }
+        .logo-img { width: 32px; height: 32px; object-fit: contain; border-radius: 4px; }
+        .logo-container span { color: #10b981; }
+        .container { padding: 80px 10%; text-align: center; }
+        h1 { font-size: 2.8rem; color: #2563eb; margin-bottom: 15px; font-weight: 800; }
+        p { color: #94a3b8; font-size: 1.2rem; }
+        .booking-card { background-color: #111827; border: 1px solid #1e293b; max-width: 550px; margin: 40px auto; padding: 40px; border-radius: 16px; text-align: left; box-shadow: 0 15px 35px rgba(0,0,0,0.4); }
+        label { font-size: 0.9rem; font-weight: bold; color: #94a3b8; display: block; margin-top: 15px; }
+        input, select { width: 100%; padding: 12px; border-radius: 6px; border: 1px solid #1e293b; background-color: #090d16; color: #ffffff; font-size: 1rem; margin-top: 5px; }
+        .btn { display: block; width: 100%; text-align: center; background-color: #2563eb; color: #ffffff; padding: 14px; border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 30px; border: none; cursor: pointer; font-size: 1rem; }
+        .btn:hover { background-color: #1d4ed8; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo-container">
+            <img src="website_logo.png" alt="Wanniassa Core Logo" class="logo-img">
+            Wanniassa <span>Software Core</span>
+        </a>
+    </header>
+
+    <div class="container">
+        <h1>Schedule Corporate System Audit</h1>
+        <p>Book an executive infrastructure consultation to plan out your custom offline database and automation parameters.</p>
+
+        <div class="booking-card">
+            <h3 style="color: #ffffff; text-align: center; font-size: 1.3rem; margin-bottom: 10px;">Enterprise Registration Panel</h3>
+            
+            <label>Company / Corporation Registered Name:</label>
+            <input type="text" id="biz-name" placeholder="e.g. Canberra Construction Group">
+            
+            <label>Target Infrastructure Core Focus:</label>
+            <select id="biz-target">
+                <option>The Sales Lead Tracker Optimization</option>
+                <option>The Attendance & Payroll Matrix Integration</option>
+                <option>The Stock & Warehouse Optimizer Deployment</option>
+                <option>Full Suite Multi-App Bundle Package Setup</option>
+            </select>
+            
+            <label>Corporate Contact Email Address:</label>
+            <input type="email" id="biz-email" placeholder="e.g. director@company.com.au">
+            
+            <button class="btn" onclick="submitBooking()">Confirm Consultation Request ➔</button>
+        </div>
+    </div>
+
+    <script>
+        function submitBooking() {
+            var name = document.getElementById('biz-name').value.strip;
+            var target = document.getElementById('biz-target').value;
+            var email = document.getElementById('biz-email').value.strip;
+            
+            if(!name || !email) {
+                alert('Data Required:\nPlease complete all registry input fields before submitting.');
+                return;
+            }
+            alert('REGISTRATION SECURED!\n\nEnterprise consultation session successfully compiled.\nOur deployment engineering core will contact you at ' + email + ' within 24 hours to integrate your system.');
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+</html>
