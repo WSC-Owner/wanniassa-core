@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Options | Wanniassa Automation Suite</title>
+    
+    <!-- FAVICON ACCENT: Embeds your electric lightning cube logo into the browser tab -->
+    <link rel="icon" type="image/png" href="website_logo.png">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #090d16; color: #ffffff; line-height: 1.6; }
+        
+        /* HEADER NAVIGATION BAR STYLING */
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 8%; background-color: #0f172a; border-bottom: 1px solid #1e293b; position: sticky; top: 0; z-index: 1000; }
+        
+        /* CUSTOM BRAND LOGO CONFIGURATION */
+        .logo-container { display: flex; align-items: center; gap: 10px; text-decoration: none; font-size: 1.4rem; font-weight: bold; color: #ffffff; }
+        .logo-img { width: 32px; height: 32px; object-fit: contain; border-radius: 4px; }
+        .logo-container span { color: #10b981; }
+        
+        nav a { color: #94a3b8; text-decoration: none; margin: 0 15px; font-size: 0.95rem; font-weight: 500; transition: color 0.3s; }
+        nav a:hover { color: #ffffff; }
+        
+        .cta-btn { background-color: #2563eb; color: #ffffff; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9rem; transition: background 0.3s; }
+        .cta-btn:hover { background-color: #1d4ed8; }
+        
+        /* CONTAINER LAYOUT */
+        .container { padding: 80px 5%; text-align: center; }
+        h1 { font-size: 2.8rem; font-weight: 800; margin-bottom: 15px; letter-spacing: -0.5px; }
+        .sub-p { color: #94a3b8; font-size: 1.2rem; margin-bottom: 50px; }
+        
+        /* PRICING SUBSCRIPTION SELECTION TIERS GRID */
+        .grid { display: flex; gap: 30px; justify-content: center; flex-wrap: wrap; margin-top: 40px; }
+        .card { background-color: #111827; border: 1px solid #1e293b; max-width: 380px; padding: 40px; border-radius: 16px; text-align: left; position: relative; }
+        .card.bundle { border: 2px solid #10b981; background: linear-gradient(145deg, #111827, #0f172a); box-shadow: 0 15px 40px rgba(16,185,129,0.15); }
+        .badge { position: absolute; top: -15px; right: 20px; background-color: #10b981; color: #ffffff; padding: 4px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; letter-spacing: 0.5px; }
+        .price { font-size: 2.8rem; font-weight: bold; color: #ffffff; margin: 20px 0; text-align: center; }
+        .price span { color: #10b981; }
+        .price sub { font-size: 1rem; color: #64748b; font-weight: normal; }
+        
+        .features-list { list-style: none; margin-bottom: 30px; }
+        .features-list li { margin-bottom: 12px; color: #cbd5e1; font-size: 0.95rem; display: flex; align-items: center; gap: 10px; }
+        .features-list li span { color: #10b981; font-weight: bold; }
+        
+        /* INTERACTIVE INPUT & BILLING BUTTONS */
+        .checkout-btn { display: block; width: 100%; text-align: center; padding: 14px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 20px; border: none; cursor: pointer; font-size: 1rem; transition: opacity 0.2s; color: #ffffff; background-color: #2563eb; }
+        .checkout-btn.bundle-btn { background-color: #10b981; }
+        .checkout-btn:hover { opacity: 0.9; }
+        input { width: 100%; padding: 12px; border-radius: 6px; border: 1px solid #1e293b; background-color: #090d16; color: #ffffff; font-size: 1rem; margin-top: 15px; text-align: center; }
+        
+        footer { background-color: #0f172a; padding: 40px 10%; text-align: center; border-top: 1px solid #1e293b; color: #64748b; font-size: 0.9rem; margin-top: 100px; }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION CONSOLE BANNER -->
+    <header>
+        <a href="index.html" class="logo-container">
+            <img src="website_logo.png" alt="Wanniassa Core Logo" class="logo-img">
+            Wanniassa <span>Software Core</span>
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="analytics.html">Analytics</a>
+            <a href="pricing.html" style="color: #ffffff; font-weight: bold;">Pricing</a>
+        </nav>
+        <a href="audit.html" class="cta-btn">Book Free Audit</a>
+    </header>
+
+    <div class="container">
+        <h1>Enterprise Software Licensing</h1>
+        <p class="sub-p">Deploy an isolated, independent application workflow or unlock the maximum high-profit bundle suite.</p>
+
+        <div class="grid">
+            <!-- Tier 1: Single App -->
+            <div class="card">
+                <h3>Single Core Utility License</h3>
+                <p style="color: #64748b; font-size: 0.9rem; margin-top: 4px;">Deploy any 1 independent desktop application binary</p>
+                <div class="price"><span>$250</span><sub> / month</sub></div>
+                
+                <ul class="features-list">
+                    <li><span>✔</span> Choice of: The Sales Lead Tracker, The Attendance & Payroll Matrix, OR The Stock & Warehouse Optimizer</li>
+                    <li><span>✔</span> Isolated local relational database storage memory logs</li>
+                    <li><span>✔</span> Custom asset brand re-skinning matching your logo</li>
+                </ul>
+                
+                <input type="email" id="email-single" placeholder="Enter corporate email for license map...">
+                <button class="checkout-btn" onclick="processPayment('Single App License', 'email-single')">⚡ Initialize PayID Checkout</button>
+            </div>
+
+            <!-- Tier 2: The Multi-App Bundle -->
+            <div class="card bundle">
+                <div class="badge">🔥 MAXIMUM LEVERAGE SUITE</div>
+                <h3>All-In-One Core Bundle</h3>
+                <p style="color: #64748b; font-size: 0.9rem; margin-top: 4px;">Unlock the complete integrated back-office systems stack</p>
+                <div class="price"><span>$450</span><sub> / month</sub></div>
+                
+                <ul class="features-list">
+                    <li><span>✔</span> <b>Full Suite:</b> Includes all 3 premium desktop utilities</li>
+                    <li><span>✔</span> Complete data integration tracking parameters across operations</li>
+                    <li><span>✔</span> High-converting automated PDF reporting loops active</li>
+                    <li style="color: #38bdf8; font-weight: bold;">🚀 Saves $300/mo compared to purchasing licenses separately</li>
+                </ul>
+                
+                <input type="email" id="email-bundle" placeholder="Enter corporate email for secure activation...">
+                <button class="checkout-btn bundle-btn" onclick="processPayment('All-In-One Suite Bundle', 'email-bundle')">⚡ Secure Suite PayID Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- LIVE HIGH-LEVERAGE PAYID ROUTING LAYOUT SCRIPT -->
+    <script>
+        function processPayment(tierName, inputId) {
+            const clientEmail = document.getElementById(inputId).value.trim();
+            
+            // Strict email pattern screening check
+            if (!clientEmail || !clientEmail.includes('@')) {
+                alert('Validation Alert:\nPlease provide a valid corporate email address to route your software activation keys.');
+                return;
+            }
+
+            const priceAmount = (tierName === 'All-In-One Suite Bundle') ? 450.00 : 250.00;
+
+            // Injects PayID operational guidelines seamlessly on click box
+            alert('⚡ WANNIASSA SOFTWARE CORE - INSTANT PAYID PORTAL\n\n' +
+                  'Thank you for choosing the ' + tierName + '.\n' +
+                  'Your monthly subscription total is: AUD $' + priceAmount.toFixed(2) + '\n\n' +
+                  'Please execute an instant OSKO / PayID transfer from your mobile banking app:\n' +
+                  '--------------------------------------------------\n' +
+                  'PayID Type:    Email Address\n' +
+                  'PayID Channel: manager@canberralogistics.com\n' +
+                  'Account Name:  Wanniassa Software Core\n' +
+                  'Reference:     ' + clientEmail.split('@')[0] + '\n' +
+                  '--------------------------------------------------\n\n' +
+                  'Once the PayID transfer is submitted, your local database suite license keys will activate instantly!');
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2026 Wanniassa Systems Automation Engine Core. ACT Software Distribution Lines.</p>
+    </footer>
+
+</body>
+</html>
